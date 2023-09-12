@@ -5,6 +5,11 @@
     <classes>
       <class name="com.united.qa.testcases.LoginPageTest"/>
       <class name="com.united.qa.testcases.HomePageTest"/>
+      <class name="com.united.qa.testcases.MyAssignmentsPageTest"/>
+      <class name="com.united.qa.testcases.AddCommandPageTest"/>
+      <class name="com.united.qa.testcases.CheckCommandPageTest"/>
+      <class name="com.united.qa.testcases.CompleteAssignmentTest"/>
+      <class name="com.united.qa.testcases.MatchPageTest"/>
       
     </classes>
   </test> <!-- Test -->
