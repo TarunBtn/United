@@ -35,10 +35,11 @@ public class MyAssignmentsPageTest extends TestBase{
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEight();		
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFourteen();		
+		testUtil.testWaitEleven();
+		testUtil.testWaitEight();
 		//checkCommandPage=new CheckCommandPage();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 													
 	}
 	
