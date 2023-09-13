@@ -5,18 +5,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.united.qa.base.TestBase;
-import com.united.qa.pages.AssignmentsPageAdmin;
 import com.united.qa.pages.HomePageAdmin;
 import com.united.qa.pages.LoginPage;
 import com.united.qa.util.TestUtil;
 
-public class HomePageAdminTest extends TestBase{
+public class UlogoChatPageTest extends TestBase{
 	LoginPage loginPage;
 	HomePageAdmin homePageAdmin;
-	AssignmentsPageAdmin assignmentsPageAdmin;
 	TestUtil testUtil;
 	
-	public HomePageAdminTest() {
+	public UlogoChatPageTest() {
 		super();
 	}
 	
@@ -24,19 +22,29 @@ public class HomePageAdminTest extends TestBase{
 	public void setUp()throws Exception {
 		initialization();
 		loginPage=new LoginPage();
-		assignmentsPageAdmin=new AssignmentsPageAdmin();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
 		testUtil.testWaitEight();
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEight();
+		homePageAdmin.clickUserLogo();
+		testUtil.testWaitFour();
+		homePageAdmin.moveHoverTologoImage();
+		testUtil.testWaitFour();
+		
+		//homePageAdmin.clickChatTab();
+		//testUtil.testWaitEight();
+		//testUtil.testWaitEight();
+		//homePageAdmin.clickChatCloseSign();
+		//testUtil.testWaitFour();
+		//homePageAdmin.clickCloseMenu();
+		//testUtil.testWaitFour();
+		
 	}
 	
 	@Test
-	public void test()throws Exception {
-		//testUtil.testWaitEight();
-		assignmentsPageAdmin=homePageAdmin.clickAssignmentsTab();
-		testUtil.testWaitFour();
+	public void chatPage() {
+		
 	}
 	
 	@AfterMethod
