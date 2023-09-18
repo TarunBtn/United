@@ -27,7 +27,7 @@ public class UlogoMycompanyPageTest extends TestBase{
 		testUtil=new TestUtil();
 		uLogoMycompanyPage=new UlogoMycompanyPage();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEight();
 		homePageAdmin.clickUserLogo();
