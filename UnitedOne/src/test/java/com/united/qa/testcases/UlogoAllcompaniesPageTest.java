@@ -4,16 +4,19 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+
 import com.united.qa.base.TestBase;
 import com.united.qa.pages.HomePageAdmin;
 import com.united.qa.pages.LoginPage;
 import com.united.qa.pages.UlogoAllcompaniesPage;
+import com.united.qa.pages.UlogoMycompanyPage;
 import com.united.qa.util.TestUtil;
 
 public class UlogoAllcompaniesPageTest extends TestBase {
 	
 	LoginPage loginPage;
 	HomePageAdmin homePageAdmin;
+	UlogoMycompanyPage uLogoMycompanyPage;
 	UlogoAllcompaniesPage uLogoAllcompaniesPage;
 	TestUtil testUtil;
 	
@@ -25,6 +28,7 @@ public class UlogoAllcompaniesPageTest extends TestBase {
 	public void setUp()throws Exception{
 		initialization();
 		loginPage=new LoginPage();
+		uLogoMycompanyPage=new UlogoMycompanyPage();
 		uLogoAllcompaniesPage=new UlogoAllcompaniesPage();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
@@ -39,8 +43,7 @@ public class UlogoAllcompaniesPageTest extends TestBase {
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		
-						
+								
 	}
 	
 	@Test
@@ -72,7 +75,46 @@ public class UlogoAllcompaniesPageTest extends TestBase {
 		testUtil.testWaitFour();
 		testUtil.scrollUp();
 		testUtil.testWaitTwo();
-		
+		//AddNewCompany
+		uLogoAllcompaniesPage.clickAddNewCompany();
+		testUtil.testWaitFour();
+		uLogoAllcompaniesPage.enterCompanyName("Silver Autogroep");
+		testUtil.testWaitEight();
+		uLogoAllcompaniesPage.selectCompanyTooltip();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		uLogoAllcompaniesPage.clickSectorDropDown();
+		testUtil.testWaitTwo();
+		uLogoAllcompaniesPage.selectSectorCompany();
+		testUtil.testWaitFour();
+		uLogoAllcompaniesPage.clearWebsiteField();
+		testUtil.testWaitTwo();
+		uLogoAllcompaniesPage.enterWebsite("https://silverauto.com/");
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		uLogoAllcompaniesPage.clickSaveBtn();
+		//uLogoAllcompaniesPage.clickCancelBtn();
+		testUtil.testWaitEleven();
+		testUtil.scrollDown();
+		testUtil.testWaitFour();
+		uLogoMycompanyPage.clickDeleteCompanySign();
+		testUtil.testWaitFour();
+		System.out.println(uLogoAllcompaniesPage.companyLink());
+		testUtil.testWaitTwo();
+		if(uLogoAllcompaniesPage.companyLink().equals("Silver Autogroep verified")) {
+			testUtil.testWaitTwo();
+			uLogoMycompanyPage.clickDeleteCompany();
+			testUtil.testWaitEight();
+		}else {
+			System.out.println("Company name not exist");
+		}
+					
 	}
 	
 	@AfterMethod

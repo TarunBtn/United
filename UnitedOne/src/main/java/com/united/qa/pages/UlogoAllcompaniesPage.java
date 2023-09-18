@@ -12,6 +12,27 @@ public class UlogoAllcompaniesPage extends TestBase{
 		@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div/div[1]/div[1]/a")
 		WebElement addNewCompany;
 		
+		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/section/div/div/form/div[1]/div[2]/div/div[1]/input")
+		WebElement enterCompanyName;
+		
+		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/section/div/div/form/div[1]/div[2]/div/div[2]/a/div[2]/span/span")
+		WebElement selectCompanyTooltip;
+		
+		@FindBy(xpath="//*[@id=\"general-company-edit\"]/form/div[7]/div[2]/div/div/div[1]")
+		WebElement clickSectorDropDown;
+		
+		@FindBy(xpath="//*[@id=\"sector-1\"]/span/span")
+		WebElement selectSector;
+		
+		@FindBy(id="websitelink")
+		WebElement enterWebsite;
+		
+		@FindBy(xpath="//*[@id=\"general-company-edit\"]/form/div[21]/div/button")
+		WebElement clickSaveBtn;
+		
+		@FindBy(xpath="//*[@id=\"general-company-edit\"]/form/div[21]/div/a")
+		WebElement clickCancelBtn;
+		
 		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div/div[1]/div[2]/select")
 		WebElement verifiedCompanyDropDown;
 		
@@ -36,12 +57,51 @@ public class UlogoAllcompaniesPage extends TestBase{
 		@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div/div[1]/div[4]/div/div[2]/div/button")
 		WebElement resetCompany;
 		
+		@FindBy(xpath="//*[@id=\"data-body\"]/tr[1]/td[1]/a")
+		WebElement companyLink;
+		
 		//Initialization
 		public UlogoAllcompaniesPage() {
 			PageFactory.initElements(Driver, this);
 		}
 		
 		//Actions
+		public void clickAddNewCompany() {
+			addNewCompany.click();
+		}
+		
+		public void enterCompanyName(String value) {
+			enterCompanyName.sendKeys(value);
+		}
+		
+		public void selectCompanyTooltip() {
+			selectCompanyTooltip.click();
+		}
+		
+		public void clickSectorDropDown() {
+			clickSectorDropDown.click();
+		}
+		
+		public void selectSectorCompany() {
+			selectSector.click();
+		}
+		
+		public void clearWebsiteField() {
+			enterWebsite.clear();
+		}
+		
+		public void enterWebsite(String value) {
+			enterWebsite.sendKeys(value);
+		}
+		
+		public void clickSaveBtn() {
+			clickSaveBtn.click();
+		}
+		
+		public void clickCancelBtn() {
+			clickCancelBtn.click();
+		}
+		
 		public void clickVerifiedCompanyDropDown() {
 			verifiedCompanyDropDown.click();
 		}
@@ -72,6 +132,11 @@ public class UlogoAllcompaniesPage extends TestBase{
 		
 		public void clickResetCompanyFilter() {
 			resetCompany.click();
+		}
+		
+		public String companyLink() {
+			return companyLink.getText();
+			
 		}
 
 }

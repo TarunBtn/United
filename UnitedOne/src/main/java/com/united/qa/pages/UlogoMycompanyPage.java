@@ -30,8 +30,10 @@ public class UlogoMycompanyPage extends TestBase{
 		WebElement saveBtn;
 		
 		@FindBy(xpath="//*[@id=\"data-body\"]/tr[1]/td[4]/span/a[2]/span")
-		WebElement deleteCompany;
+		WebElement clickDeleteCompanySign;
 		
+		@FindBy(xpath="//*[@id=\"remove_company\"]/div/div/div[3]/button[1]")
+		WebElement clickDeleteCompany;
 		
 		//Initialization
 		public UlogoMycompanyPage() {
@@ -71,8 +73,12 @@ public class UlogoMycompanyPage extends TestBase{
 			saveBtn.click();
 		}
 		
-		public void deleteCompany() {
-			deleteCompany.click();
+		public void clickDeleteCompanySign() {
+			clickDeleteCompanySign.click();
+		}
+		
+		public void clickDeleteCompany() {
+			clickDeleteCompany.click();
 		}
 
 }
