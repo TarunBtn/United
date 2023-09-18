@@ -60,7 +60,7 @@ public class HomePageAdmin extends TestBase{
 			@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[2]/div[1]/ul/li[4]/div/div/div/div[2]/ul/span[5]/li/a")
 			WebElement userManagementTab;
 			
-			@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[2]/div[1]/ul/li[4]/div/div/div/div[2]/ul/span[6]/li/a/font/font")
+			@FindBy(xpath="/html/body/div[1]/header/nav/div/div[2]/div[1]/ul/li[4]/div/div/div/div[2]/ul/span[6]/li/a")
 			WebElement allCompanies;
 			
 				
