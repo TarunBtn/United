@@ -160,7 +160,7 @@ public class AssignmentsPageAdminTest extends TestBase{
 	  	assignmentsPageFree.clickFavorites();
 	  	testUtil.testWaitEight();
 	  	assignmentsPageFree.clickFavorites();
-	  	testUtil.testWaitEight();
+	  	testUtil.testWaitEleven();
 	  	//Sorting
 	  	assignmentsPageFree.clickSortingDropDown();
 	  	testUtil.testWaitTwo();
