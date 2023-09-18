@@ -10,21 +10,22 @@
       <class name="com.united.qa.testcases.CheckCommandPageTest"/>
       <class name="com.united.qa.testcases.CompleteAssignmentTest"/>
       <class name="com.united.qa.testcases.MatchPageTest"/>
-      <class name="com.crm.qa.testcases.AssignmentsPageFreeTest"/> 
-      <class name="com.crm.qa.testcases.StorePageFreeTest"/> 
-      <class name="com.crm.qa.testcases.CommunityPageFreeTest"/>
-      <class name="com.crm.qa.testcases.EntrepreneursPageFreeTest"/>
-      <class name="com.crm.qa.testcases.BusinessesPageFreeTest"/>
-      <class name="com.crm.qa.testcases.AssignmentsPageAdminTest"/>
-      <class name="com.crm.qa.testcases.CommunityPageAdminTest"/>
-      <class name="com.crm.qa.testcases.MatchPageAdminTest"/>
-      <class name="com.crm.qa.testcases.UlogoMydashboardPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoChatPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoMynotificationsPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoMyprofilePageTest"/>
-      <class name="com.crm.qa.testcases.UlogoMycompanyPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoMyreactionsPageTest"/>
-      <class name="com.crm.qa.testcases.UlogoUsermanagementPageTest"/>
+      <class name="com.united.qa.testcases.AssignmentsPageFreeTest"/> 
+      <class name="com.united.qa.testcases.StorePageFreeTest"/> 
+      <class name="com.united.qa.testcases.CommunityPageFreeTest"/>
+      <class name="com.united.qa.testcases.EntrepreneursPageFreeTest"/>
+      <class name="com.united.qa.testcases.BusinessesPageFreeTest"/>
+      <class name="com.united.qa.testcases.AssignmentsPageAdminTest"/>
+      <class name="com.united.qa.testcases.CommunityPageAdminTest"/>
+      <class name="com.united.qa.testcases.MatchPageAdminTest"/>
+      <class name="com.united.qa.testcases.UlogoMydashboardPageTest"/>
+      <class name="com.united.qa.testcases.UlogoChatPageTest"/>
+      <class name="com.united.qa.testcases.UlogoMynotificationsPageTest"/>
+      <class name="com.united.qa.testcases.UlogoMyprofilePageTest"/>
+      <class name="com.united.qa.testcases.UlogoMycompanyPageTest"/>
+      <class name="com.united.qa.testcases.UlogoMyreactionsPageTest"/>
+      <class name="com.united.qa.testcases.UlogoUsermanagementPageTest"/>
+      <class name="com.united.qa.testcases.UlogoAllcompaniesPageTest"/>
       
     </classes>
   </test> <!-- Test -->
