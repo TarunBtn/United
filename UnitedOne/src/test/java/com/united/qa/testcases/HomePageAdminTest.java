@@ -36,7 +36,7 @@ public class HomePageAdminTest extends TestBase{
 	public void test()throws Exception {
 		//testUtil.testWaitEight();
 		assignmentsPageAdmin=homePageAdmin.clickAssignmentsTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 	}
 	
 	@AfterMethod
