@@ -37,7 +37,7 @@ public class CheckCommandPageTest extends TestBase{
 		completeAssignment=new CompleteAssignment();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEight();
 		homePage.clickMyAssignmentsLink();
